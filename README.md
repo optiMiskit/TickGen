@@ -12,6 +12,6 @@ I will work on making the code use more general workflows/conventions.
 * To game swap, put a subtitle VFX in rhre3 with the name of the game you are switching to
 * You'll need: 
   - A sub named "defaultGameSetup" and "swapEngine" to do those things
-  - Variables "quarter" and "half"
+  - Variables "quarter" and "half" (rest values)
   - Variables for engine IDs in the naming convention "engID_gamename"
   - (optional): sub named metronome
