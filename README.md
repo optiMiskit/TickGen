@@ -1,18 +1,16 @@
-# TickGen - A (wip) RHRE to Tickflow converter
+# TickGen - A RHRE to Tickflow converter (wip)
 
-Please note that this early on, the code relies on some setup specific to my workflow.
-I will work on making the code use more general workflows/conventions.
+## How to use this tool
+1. Create your remix in RHRE3 as usual
+2. Add subtitle VFX cues where you want to swap games in your remix. Set the subtitle's text to the name of the game you are switching to. [use the same name as your game swap sub]
+3. Run TickGen and give it the path to your remix file.
+4. Copy the tickflow from the generated .txt files into your tickflow template.
 
-## Things to improve right now
-* Currently, rests use integers (eww)
-* Subtitles are exclusively used for game switching.
-* Cues are simply replaced with metronome ticks, work need to be done to built a database of game tickflow subs
+## Configuration
+* At the top of the script are some configurable variables that allow you to rename or change certain parameters of the generated tickflow
+* Not yet configurable (will be in the future):
+  - Game swap sub naming convention (currently "gamename_slot#")
+  - Rest value convention (currently uses ints in some places, and hex values elsewhere)
 
-## Help
-* To game swap, put a subtitle VFX in rhre3 with the name of the game you are switching to
-* You'll need: 
-  - A sub named "defaultGameSetup" and "swapEngine" to do those things
-  - Subs to replace games in different slots (0 - 3) with the naming convention "gamename_slot#"
-  - Variables "quarter" and "half" (rest values)
-  - Variables for engine IDs in the naming convention "engID_gamename"
-  - (optional): sub named metronome
+## Project Tasks
+You can check current project tasks on the ![TickGen Task Board](https://github.com/users/optiMiskit/projects/3)
