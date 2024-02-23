@@ -10,7 +10,6 @@
 * At the top of the script are some configurable variables that allow you to rename or change certain parameters of the generated tickflow
 * Not yet configurable (will be in the future):
   - Game swap sub naming convention (currently "gamename_slot#")
-  - Rest value convention (currently uses ints in some places, and hex values elsewhere)
 
 ## Project Tasks
 You can check current project tasks on the ![TickGen Task Board](https://github.com/users/optiMiskit/projects/3)
